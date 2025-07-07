@@ -9,7 +9,7 @@ export default function ServicesPage() {
             icon: Plane,
             title: 'Flight Bookings',
             description: 'Compare prices from 500+ airlines and book the best deals. Get instant confirmations and exclusive discounts.',
-            features: ['Price comparison across 500+ airlines', 'Instant booking confirmation', 'Flexible date options', 'Seat selection & upgrades'],
+            features: ['Price comparison across 500+ airlines', 'Instant booking confirmation', 'Flexible date options',],
             gradient: 'from-blue-500 to-indigo-600',
             bgGradient: 'from-blue-50 to-indigo-50',
             popular: true
@@ -23,33 +23,33 @@ export default function ServicesPage() {
             bgGradient: 'from-emerald-50 to-green-50',
             popular: false
         },
-        {
-            icon: Car,
-            title: 'Car Rentals',
-            description: 'Rent from trusted car rental companies worldwide. Perfect for exploring your destination at your own pace.',
-            features: ['Global car rental network', 'Economy to luxury vehicles', 'GPS navigation included', '24/7 roadside assistance'],
-            gradient: 'from-orange-500 to-red-600',
-            bgGradient: 'from-orange-50 to-red-50',
-            popular: false
-        },
-        {
-            icon: Smartphone,
-            title: 'Custom Trip Planning',
-            description: 'AI-powered itineraries crafted by travel experts. Get personalized recommendations based on your preferences.',
-            features: ['AI + expert curation', 'Personalized recommendations', 'Real-time updates', 'Mobile app integration'],
-            gradient: 'from-purple-500 to-pink-600',
-            bgGradient: 'from-purple-50 to-pink-50',
-            popular: true
-        },
-        {
-            icon: MapPin,
-            title: 'Local Tours & Experiences',
-            description: 'Discover authentic local experiences, cultural walks, food tours, and hidden gems curated by local experts.',
-            features: ['Local expert guides', 'Cultural immersion experiences', 'Food & wine tours', 'Skip-the-line access'],
-            gradient: 'from-teal-500 to-cyan-600',
-            bgGradient: 'from-teal-50 to-cyan-50',
-            popular: false
-        },
+        // {
+        //     icon: Car,
+        //     title: 'Car Rentals',
+        //     description: 'Rent from trusted car rental companies worldwide. Perfect for exploring your destination at your own pace.',
+        //     features: ['Global car rental network', 'Economy to luxury vehicles', 'GPS navigation included', '24/7 roadside assistance'],
+        //     gradient: 'from-orange-500 to-red-600',
+        //     bgGradient: 'from-orange-50 to-red-50',
+        //     popular: false
+        // },
+        // {
+        //     icon: Smartphone,
+        //     title: 'Custom Trip Planning',
+        //     description: 'AI-powered itineraries crafted by travel experts. Get personalized recommendations based on your preferences.',
+        //     features: ['AI + expert curation', 'Personalized recommendations', 'Real-time updates', 'Mobile app integration'],
+        //     gradient: 'from-purple-500 to-pink-600',
+        //     bgGradient: 'from-purple-50 to-pink-50',
+        //     popular: true
+        // },
+        // {
+        //     icon: MapPin,
+        //     title: 'Local Tours & Experiences',
+        //     description: 'Discover authentic local experiences, cultural walks, food tours, and hidden gems curated by local experts.',
+        //     features: ['Local expert guides', 'Cultural immersion experiences', 'Food & wine tours', 'Skip-the-line access'],
+        //     gradient: 'from-teal-500 to-cyan-600',
+        //     bgGradient: 'from-teal-50 to-cyan-50',
+        //     popular: false
+        // },
         {
             icon: Package,
             title: 'Package Deals',
