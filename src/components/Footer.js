@@ -12,7 +12,7 @@ const Footer = () => {
                     <div>
                         <div className="flex items-center mb-4">
                             <Plane className="h-8 w-8 text-green-400 mr-3" />
-                            <span className="text-2xl font-bold text-green-400">Wanderlust</span>
+                            <span className="text-2xl font-bold text-green-400">Airplane Site</span>
                         </div>
                         <p className="text-gray-400 text-lg">
                             Making travel dreams come true, one journey at a time.
@@ -32,7 +32,7 @@ const Footer = () => {
                             ))}
                         </div>
                         <p className="text-gray-500 text-sm">
-                            © 2025 Wanderlust Travel. All rights reserved.
+                            © 2025 Airplane Site Travel. All rights reserved.
                         </p>
                     </div>
                 </div>

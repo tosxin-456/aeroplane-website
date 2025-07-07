@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Menu, X, Plane, Building, Train, MapPin, Star, Users, Shield } from 'lucide-react';
+import flightImage from '../../assets/flight.jpeg'
 
 export default function TravelHomepage() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -34,7 +35,7 @@ export default function TravelHomepage() {
                         <div className="relative">
                             <div className="relative overflow-hidden rounded-3xl shadow-2xl transform hover:scale-105 transition-transform duration-500">
                                 <img
-                                    src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80"
+                                    src={`${flightImage}`}
                                     alt="Beautiful mountain landscape"
                                     className="w-full h-96 lg:h-[600px] object-cover"
                                 />

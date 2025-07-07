@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Menu, X, Globe, Plane, Building, Car, Smartphone, MapPin, Package, Shield, Clock, DollarSign, Headphones, CheckCircle, Star, Award, Users, ArrowRight, Phone, Mail, Calendar } from 'lucide-react';
+import plane from '../../assets/airplane.jpeg'
 
 export default function ServicesPage() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -23,33 +24,6 @@ export default function ServicesPage() {
             bgGradient: 'from-emerald-50 to-green-50',
             popular: false
         },
-        // {
-        //     icon: Car,
-        //     title: 'Car Rentals',
-        //     description: 'Rent from trusted car rental companies worldwide. Perfect for exploring your destination at your own pace.',
-        //     features: ['Global car rental network', 'Economy to luxury vehicles', 'GPS navigation included', '24/7 roadside assistance'],
-        //     gradient: 'from-orange-500 to-red-600',
-        //     bgGradient: 'from-orange-50 to-red-50',
-        //     popular: false
-        // },
-        // {
-        //     icon: Smartphone,
-        //     title: 'Custom Trip Planning',
-        //     description: 'AI-powered itineraries crafted by travel experts. Get personalized recommendations based on your preferences.',
-        //     features: ['AI + expert curation', 'Personalized recommendations', 'Real-time updates', 'Mobile app integration'],
-        //     gradient: 'from-purple-500 to-pink-600',
-        //     bgGradient: 'from-purple-50 to-pink-50',
-        //     popular: true
-        // },
-        // {
-        //     icon: MapPin,
-        //     title: 'Local Tours & Experiences',
-        //     description: 'Discover authentic local experiences, cultural walks, food tours, and hidden gems curated by local experts.',
-        //     features: ['Local expert guides', 'Cultural immersion experiences', 'Food & wine tours', 'Skip-the-line access'],
-        //     gradient: 'from-teal-500 to-cyan-600',
-        //     bgGradient: 'from-teal-50 to-cyan-50',
-        //     popular: false
-        // },
         {
             icon: Package,
             title: 'Package Deals',
@@ -95,7 +69,7 @@ export default function ServicesPage() {
         {
             icon: Users,
             title: 'Trusted by Millions',
-            description: 'Join over 2 million satisfied travelers who choose Wanderlust.',
+            description: 'Join over 2 million satisfied travelers who choose Airplane Site.',
             color: 'text-indigo-600'
         }
     ];
@@ -127,23 +101,14 @@ export default function ServicesPage() {
         <div className="min-h-screen bg-gradient-to-br from-slate-50 via-white to-green-50">
 
             {/* Hero Section */}
-            <section className="pt-24 pb-16 bg-gradient-to-br from-green-600 via-emerald-600 to-teal-600 relative overflow-hidden">
-                <div className="absolute inset-0">
-                    {[...Array(20)].map((_, i) => (
-                        <div
-                            key={i}
-                            className="absolute bg-white/10 rounded-full animate-pulse"
-                            style={{
-                                width: `${10 + Math.random() * 30}px`,
-                                height: `${10 + Math.random() * 30}px`,
-                                left: `${Math.random() * 100}%`,
-                                top: `${Math.random() * 100}%`,
-                                animationDelay: `${Math.random() * 4}s`,
-                                animationDuration: `${2 + Math.random() * 3}s`
-                            }}
-                        />
-                    ))}
-                </div>
+            <section
+                className="pt-24 pb-16 bg-cover bg-center bg-no-repeat relative"
+                style={{
+                    backgroundImage: `url(${plane})`, // Replace with actual path
+                }}
+            >
+                {/* Optional overlay to make text more readable */}
+                <div className="absolute inset-0 bg-gradient-to-br from-green-900/70 via-emerald-900/60 to-teal-900/70 z-0" />
 
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
                     <div className="text-center">
@@ -156,7 +121,7 @@ export default function ServicesPage() {
                         </h1>
 
                         <p className="text-xl md:text-2xl text-white/90 mb-12 max-w-4xl mx-auto leading-relaxed">
-                            From booking flights to crafting personalized itineraries, Wanderlust provides everything you need
+                            From booking flights to crafting personalized itineraries, Airplane Site provides everything you need
                             to turn your travel dreams into unforgettable experiences.
                         </p>
 
@@ -246,7 +211,7 @@ export default function ServicesPage() {
                             WHY CHOOSE US
                         </span>
                         <h2 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6">
-                            The Wanderlust Advantage
+                            The Airplane Site Advantage
                         </h2>
                         <p className="text-xl text-gray-600 max-w-3xl mx-auto">
                             Discover why millions of travelers trust us with their most important journeys
