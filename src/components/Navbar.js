@@ -26,7 +26,7 @@ const Navbar = () => {
                     <div className="flex items-center">
                         <div className="flex-shrink-0 flex items-center cursor-pointer" onClick={() => navigate('/')}>
                             <Plane className="h-8 w-8 text-blue-600 mr-2" />
-                            <span className="text-2xl font-bold text-green-600">Airplane Site</span>
+                            <span className="text-2xl font-bold text-green-600">EricAir</span>
                         </div>
                     </div>
 

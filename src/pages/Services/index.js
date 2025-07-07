@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Menu, X, Globe, Plane, Building, Car, Smartphone, MapPin, Package, Shield, Clock, DollarSign, Headphones, CheckCircle, Star, Award, Users, ArrowRight, Phone, Mail, Calendar } from 'lucide-react';
+import { Menu, X, Globe, Plane, Building, Car, Smartphone, MapPin, Package, Shield, Clock, DollarSign, Headphones, CheckCircle, Star, Award, Users, ArrowRight, Phone, Mail, Calendar, Train, Rocket } from 'lucide-react';
 import plane from '../../assets/airplane.jpeg'
 
 export default function ServicesPage() {
@@ -25,77 +25,60 @@ export default function ServicesPage() {
             popular: false
         },
         {
-            icon: Package,
-            title: 'Package Deals',
-            description: 'Save more with bundled packages. Book flights, hotels, and activities together for the best value.',
-            features: ['Save up to 30% on bundles', 'Coordinated bookings', 'Single payment process', 'Group discounts available'],
-            gradient: 'from-amber-500 to-yellow-600',
-            bgGradient: 'from-amber-50 to-yellow-50',
-            popular: true
-        }
+            icon: Train,
+            title: 'Train Route Search',
+            description: 'Plan your land journeys with ease. Discover train routes, timetables, and stations in major countries.',
+            features: [
+                'Search train schedules across regions',
+                'Coverage in Europe, Asia, and North America',
+                'Station-to-station route lookup',
+                'No booking required — plan only',
+            ],
+            gradient: 'from-yellow-500 to-amber-600',
+            bgGradient: 'from-yellow-50 to-amber-50',
+            popular: false
+        },
     ];
 
     const whyChooseUs = [
         {
             icon: DollarSign,
-            title: 'Price Match Guarantee',
-            description: 'Found a lower price elsewhere? We\'ll match it and give you an extra 5% off.',
+            title: 'Competitive Pricing',
+            description: 'We partner directly with global airlines to offer you great deals without hidden fees.',
             color: 'text-green-600'
         },
         {
             icon: Clock,
-            title: 'Easy Booking Process',
-            description: 'Book in under 3 minutes with our streamlined, user-friendly booking system.',
+            title: 'Fast & Simple Booking',
+            description: 'Book your flight in under 3 minutes with our intuitive, mobile-friendly platform.',
             color: 'text-blue-600'
         },
         {
             icon: Headphones,
-            title: '24/7 Customer Support',
-            description: 'Our travel experts are available around the clock to assist you.',
+            title: 'Responsive Support',
+            description: 'Our small but dedicated team is here to help—day or night.',
             color: 'text-purple-600'
         },
         {
             icon: Shield,
             title: 'Secure Payments',
-            description: 'Your data is protected with bank-level security and fraud protection.',
+            description: 'We use industry-standard encryption to protect your payments and personal info.',
             color: 'text-red-600'
         },
         {
-            icon: Award,
-            title: 'Award-Winning Service',
-            description: 'Recognized as "Best Travel Platform 2024" by Travel Weekly.',
-            color: 'text-amber-600'
-        },
-        {
             icon: Users,
-            title: 'Trusted by Millions',
-            description: 'Join over 2 million satisfied travelers who choose Airplane Site.',
+            title: 'Built for Modern Travelers',
+            description: 'Designed with you in mind — flexible options and features that keep things simple.',
             color: 'text-indigo-600'
-        }
+        },
+        {
+            icon: Rocket,
+            title: 'Startup Energy',
+            description: 'We move fast, innovate constantly, and listen closely to our early users.',
+            color: 'text-orange-600'
+        },
     ];
-
-    const optionalExtras = [
-        {
-            title: 'Travel Insurance',
-            description: 'Comprehensive coverage for medical emergencies, trip cancellations, and lost luggage.',
-            price: 'From $12/trip'
-        },
-        {
-            title: 'Visa Support',
-            description: 'Expert assistance with visa applications and documentation for hassle-free travel.',
-            price: 'From $49/application'
-        },
-        {
-            title: 'Travel Advisories',
-            description: 'Real-time updates on safety, weather, and travel conditions for your destinations.',
-            price: 'Free with booking'
-        },
-        {
-            title: 'Airport Transfers',
-            description: 'Convenient and reliable transportation from airports to your accommodation.',
-            price: 'From $25/transfer'
-        }
-    ];
+    
 
     return (
         <div className="min-h-screen bg-gradient-to-br from-slate-50 via-white to-green-50">
@@ -121,7 +104,7 @@ export default function ServicesPage() {
                         </h1>
 
                         <p className="text-xl md:text-2xl text-white/90 mb-12 max-w-4xl mx-auto leading-relaxed">
-                            From booking flights to crafting personalized itineraries, Airplane Site provides everything you need
+                            From booking flights to crafting personalized itineraries, EricAir provides everything you need
                             to turn your travel dreams into unforgettable experiences.
                         </p>
 
@@ -211,7 +194,7 @@ export default function ServicesPage() {
                             WHY CHOOSE US
                         </span>
                         <h2 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6">
-                            The Airplane Site Advantage
+                            The EricAir Advantage
                         </h2>
                         <p className="text-xl text-gray-600 max-w-3xl mx-auto">
                             Discover why millions of travelers trust us with their most important journeys
@@ -242,11 +225,11 @@ export default function ServicesPage() {
                     {/* Stats */}
                     <div className="mt-20 grid md:grid-cols-4 gap-8 text-center">
                         {[
-                            { number: '2M+', label: 'Happy Travelers' },
-                            { number: '150+', label: 'Countries Covered' },
-                            { number: '4.9★', label: 'Average Rating' },
-                            { number: '24/7', label: 'Customer Support' }
-                        ].map((stat, index) => (
+                            { number: '300+', label: 'Airlines Connected' },
+                            { number: '190+', label: 'Countries Reachable' },
+                            { number: '100%', label: 'Real-Time Pricing' },
+                            { number: 'Instant', label: 'Flight Booking Confirmations' }
+                        ].map((stat) => (
                             <div key={stat.label} className="bg-white p-6 rounded-2xl shadow-lg">
                                 <div className="text-3xl md:text-4xl font-bold text-green-600 mb-2">
                                     {stat.number}
@@ -257,97 +240,10 @@ export default function ServicesPage() {
                             </div>
                         ))}
                     </div>
+
                 </div>
             </section>
 
-            {/* Optional Extras */}
-            <section className="py-24 bg-white">
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="text-center mb-16">
-                        <span className="inline-block px-4 py-2 bg-green-100 text-green-800 rounded-full text-sm font-semibold mb-4">
-                            OPTIONAL EXTRAS
-                        </span>
-                        <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-                            Additional Services
-                        </h2>
-                        <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-                            Enhance your travel experience with our premium add-on services
-                        </p>
-                    </div>
-
-                    <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-                        {optionalExtras.map((extra, index) => (
-                            <div
-                                key={extra.title}
-                                className="bg-gradient-to-br from-gray-50 to-white p-6 rounded-2xl border border-gray-200 hover:shadow-lg transition-all duration-300 hover:border-green-200"
-                            >
-                                <h3 className="text-lg font-bold text-gray-900 mb-3">
-                                    {extra.title}
-                                </h3>
-
-                                <p className="text-gray-600 text-sm leading-relaxed mb-4">
-                                    {extra.description}
-                                </p>
-
-                                <div className="flex items-center justify-between">
-                                    <span className="text-green-600 font-bold text-sm">
-                                        {extra.price}
-                                    </span>
-                                    <button className="text-green-600 hover:text-green-700 font-medium text-sm transition-colors">
-                                        Add to Trip
-                                    </button>
-                                </div>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            </section>
-
-            {/* CTA Section */}
-            <section className="py-24 bg-gradient-to-br from-green-600 via-emerald-600 to-teal-600 relative overflow-hidden">
-                <div className="absolute inset-0">
-                    {[...Array(25)].map((_, i) => (
-                        <div
-                            key={i}
-                            className="absolute bg-white/10 rounded-full animate-pulse"
-                            style={{
-                                width: `${8 + Math.random() * 24}px`,
-                                height: `${8 + Math.random() * 24}px`,
-                                left: `${Math.random() * 100}%`,
-                                top: `${Math.random() * 100}%`,
-                                animationDelay: `${Math.random() * 4}s`,
-                                animationDuration: `${2 + Math.random() * 3}s`
-                            }}
-                        />
-                    ))}
-                </div>
-
-                <div className="max-w-5xl mx-auto text-center px-4 sm:px-6 lg:px-8 relative z-10">
-                    <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-                        Ready to Start Your Adventure?
-                    </h2>
-
-                    <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
-                        Let our travel experts help you plan the perfect trip. Get started with a free consultation today.
-                    </p>
-
-                    <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-                        <button className="group bg-white text-green-600 hover:text-green-700 font-bold py-4 px-8 rounded-full text-lg transition-all duration-300 transform hover:scale-110 hover:shadow-2xl">
-                            <span className="flex items-center">
-                                Book Consultation
-                                <Calendar className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform duration-200" />
-                            </span>
-                        </button>
-
-                        <button className="group bg-transparent border-2 border-white text-white font-bold py-4 px-8 rounded-full text-lg transition-all duration-300 hover:bg-white hover:text-green-600">
-                            <span className="flex items-center">
-                                <Mail className="mr-2 h-5 w-5" />
-                                Get Quote
-                            </span>
-                        </button>
-                    </div>
-                </div>
-            </section>
 
         </div>
     );

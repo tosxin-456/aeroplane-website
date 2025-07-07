@@ -46,7 +46,7 @@ export default function ContactPage() {
         {
             icon: Mail,
             title: 'Email Us',
-            info: 'hello@Airplane Site.com',
+            info: 'hello@EricAir.com',
             description: 'Get detailed responses to your questions',
             gradient: 'from-green-500 to-emerald-600',
             bgGradient: 'from-green-50 to-emerald-50'
@@ -253,7 +253,7 @@ export default function ContactPage() {
                                     <h3 className="text-2xl font-bold text-gray-900">Visit Our Office</h3>
                                 </div>
                                 <div className="space-y-3">
-                                    <p className="text-gray-600 font-medium">Airplane Site Travel Headquarters</p>
+                                    <p className="text-gray-600 font-medium">EricAir Travel Headquarters</p>
                                     <p className="text-gray-600">123 Adventure Boulevard<br />Suite 500<br />New York, NY 10001</p>
                                     <div className="pt-4">
                                         <button className="bg-gradient-to-r from-purple-500 to-pink-600 text-white px-6 py-3 rounded-xl font-medium hover:from-purple-600 hover:to-pink-700 transition-all duration-200 shadow-lg hover:shadow-xl">
@@ -270,7 +270,7 @@ export default function ContactPage() {
             {/* Why Contact Us */}
             <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-green-50 to-emerald-50">
                 <div className="max-w-7xl mx-auto text-center">
-                    <h2 className="text-4xl font-bold text-gray-900 mb-4">Why Contact Airplane Site?</h2>
+                    <h2 className="text-4xl font-bold text-gray-900 mb-4">Why Contact EricAir?</h2>
                     <p className="text-xl text-gray-600 mb-12 max-w-3xl mx-auto">
                         We're not just a booking platform – we're your travel partners dedicated to making every journey extraordinary.
                     </p>
