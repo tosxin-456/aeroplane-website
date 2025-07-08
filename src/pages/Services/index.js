@@ -1,33 +1,46 @@
 import React, { useState } from 'react';
 import { Menu, X, Globe, Plane, Building, Car, Smartphone, MapPin, Package, Shield, Clock, DollarSign, Headphones, CheckCircle, Star, Award, Users, ArrowRight, Phone, Mail, Calendar, Train, Rocket } from 'lucide-react';
 import plane from '../../assets/airplane.jpeg'
+import { useNavigate } from 'react-router-dom';
 
 export default function ServicesPage() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
-
+    const navigate = useNavigate()
     const coreServices = [
         {
             icon: Plane,
-            title: 'Flight Bookings',
-            description: 'Compare prices from 500+ airlines and book the best deals. Get instant confirmations and exclusive discounts.',
-            features: ['Price comparison across 500+ airlines', 'Instant booking confirmation', 'Flexible date options',],
+            title: 'Flight Reservations',
+            description:
+                'Reserve a flight slot with ease. We handle the booking process for you and send confirmations once secured.',
+            features: [
+                'Reserve flight slots with top airlines',
+                'We book the flights on your behalf',
+                'Get notified once booking is confirmed',
+            ],
             gradient: 'from-blue-500 to-indigo-600',
             bgGradient: 'from-blue-50 to-indigo-50',
-            popular: true
+            popular: true,
         },
         {
             icon: Building,
             title: 'Hotel Reservations',
-            description: 'From budget-friendly hostels to luxury resorts, find the perfect accommodation for every traveler.',
-            features: ['3M+ properties worldwide', 'Best price guarantee', 'Free cancellation options', 'Verified guest reviews'],
+            description:
+                'From budget-friendly hostels to luxury resorts, find the perfect accommodation for every traveler.',
+            features: [
+                '3M+ properties worldwide',
+                'Best price guarantee',
+                'Free cancellation options',
+                'Verified guest reviews',
+            ],
             gradient: 'from-emerald-500 to-green-600',
             bgGradient: 'from-emerald-50 to-green-50',
-            popular: false
+            popular: false,
         },
         {
             icon: Train,
             title: 'Train Route Search',
-            description: 'Plan your land journeys with ease. Discover train routes, timetables, and stations in major countries.',
+            description:
+                'Plan your land journeys with ease. Discover train routes, timetables, and stations in major countries.',
             features: [
                 'Search train schedules across regions',
                 'Coverage in Europe, Asia, and North America',
@@ -36,9 +49,10 @@ export default function ServicesPage() {
             ],
             gradient: 'from-yellow-500 to-amber-600',
             bgGradient: 'from-yellow-50 to-amber-50',
-            popular: false
+            popular: false,
         },
     ];
+      
 
     const whyChooseUs = [
         {
@@ -78,7 +92,7 @@ export default function ServicesPage() {
             color: 'text-orange-600'
         },
     ];
-    
+
 
     return (
         <div className="min-h-screen bg-gradient-to-br from-slate-50 via-white to-green-50">
@@ -109,14 +123,22 @@ export default function ServicesPage() {
                         </p>
 
                         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-                            <button className="group bg-white text-green-600 hover:text-green-700 font-bold py-4 px-8 rounded-full text-lg transition-all duration-300 transform hover:scale-105 hover:shadow-2xl">
+                            {/* Button 1: Get Started Today – redirects to external link */}
+                            <button
+                                onClick={() => window.location.href = 'https://aeroplane-iota.vercel.app/'}
+                                className="group bg-white text-green-600 hover:text-green-700 font-bold py-4 px-8 rounded-full text-lg transition-all duration-300 transform hover:scale-105 hover:shadow-2xl"
+                            >
                                 <span className="flex items-center">
                                     Get Started Today
                                     <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform duration-200" />
                                 </span>
                             </button>
 
-                            <button className="group bg-transparent border-2 border-white text-white font-bold py-4 px-8 rounded-full text-lg transition-all duration-300 hover:bg-white hover:text-green-600">
+                            {/* Button 2: Call Us Now – navigates to internal route /contact-us */}
+                            <button
+                                onClick={() => navigate('/contact')}
+                                className="group bg-transparent border-2 border-white text-white font-bold py-4 px-8 rounded-full text-lg transition-all duration-300 hover:bg-white hover:text-green-600"
+                            >
                                 <span className="flex items-center">
                                     <Phone className="mr-2 h-5 w-5" />
                                     Call Us Now

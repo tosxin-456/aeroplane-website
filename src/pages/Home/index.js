@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 import { Menu, X, Plane, Building, Train, MapPin, Star, Users, Shield } from 'lucide-react';
 import flightImage from '../../assets/flight.jpeg'
+import { useNavigate } from 'react-router-dom';
 
 export default function TravelHomepage() {
-    const [isMenuOpen, setIsMenuOpen] = useState(false);
+const navigate = useNavigate()
 
     return (
         <div className="min-h-screen bg-green-600">
@@ -23,7 +24,10 @@ export default function TravelHomepage() {
                             <p className="text-xl md:text-2xl text-gray-700 mb-8 max-w-2xl leading-relaxed">
                                 Explore breathtaking destinations, create unforgettable memories, and experience the world like never before
                             </p>
-                            <button className="group bg-green-600 hover:bg-green-700 text-white font-bold py-4 px-8 rounded-full text-lg transition-all duration-300 transform hover:scale-105 hover:shadow-2xl">
+                            <button
+                                onClick={() => window.location.href = 'https://aeroplane-iota.vercel.app/'}
+                                className="group bg-green-600 hover:bg-green-700 text-white font-bold py-4 px-8 rounded-full text-lg transition-all duration-300 transform hover:scale-105 hover:shadow-2xl"
+                            >
                                 <span className="flex items-center justify-center lg:justify-start">
                                     Get Started
                                     <MapPin className="ml-2 h-5 w-5 group-hover:animate-bounce" />
@@ -157,7 +161,10 @@ export default function TravelHomepage() {
                     <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
                         Join thousands of satisfied travelers who trust us to make their dream destinations a reality
                     </p>
-                    <button className="group bg-white text-green-600 hover:text-green-700 font-bold py-4 px-8 rounded-full text-lg transition-all duration-300 transform hover:scale-110 hover:shadow-2xl">
+                    <button
+                        onClick={() => window.location.href = 'https://aeroplane-iota.vercel.app/'}
+                        className="group bg-white text-green-600 hover:text-green-700 font-bold py-4 px-8 rounded-full text-lg transition-all duration-300 transform hover:scale-110 hover:shadow-2xl"
+                    >
                         <span className="flex items-center">
                             Book Now
                             <Plane className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform duration-200" />
