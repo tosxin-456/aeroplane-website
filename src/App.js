@@ -11,6 +11,7 @@ import FAQPage from "./pages/FAQ";
 
 function App() {
   return (
+    
     <Router>
       <Navbar />
       <main className="pt-20">
